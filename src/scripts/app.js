@@ -15,11 +15,11 @@ function toggleMenu() {
     menu.classList.toggle("menu--open");
 };
 
-// afficher données
+// afficher données aide de Copilot pour corriger le code
 
 window.onload = function() {
     fetch('../assets/countries-FR.json')
-    .then(response => response.json)
+    .then(response => response.json())
     .then(data => {
         displayPays(data);
     });
@@ -27,13 +27,14 @@ window.onload = function() {
 
 function displayPays(data) {
     const selection = document.getElementById('pays');
-
+    // code de copilot
     for(const code in data) {
-        if(data.hasOwnProprety(code)) {
+        if(data.hasOwnProperty(code)) {
             let option = document.createElement('option');
             option.value = code;
             option.textContent = data[code];
             selection.appendChild(option);
         }
     }
+    // fin code copilot
 }

@@ -44,34 +44,38 @@
     <main>
         <h1>Bienvenue dans la base des données de l’énergie produite par foyer</h1>
         <p>Veuillez entrer vos coordonnées ainsi que le montant d’énergie produite par votre foyer</p>
-        <div>
-            <label for="nom">Nom :</label>
-            <input type="text" id="nom" name="nom" placeholder="Nom de famille">
-        </div>
-        <div>
-            <label for="prenom">Prénom :</label>
-            <input type="text" id="prenom" name="prenom" placeholder="Prénom">
-        </div>
-        <div>
-            <label for="rue">Rue :</label>
-            <input type="text" id="rue" name="rue" placeholder="Rue">
-        </div>
-        <div>
-            <label for="numero">Numéro :</label>
-            <input type="text" id="numero" name="numero" placeholder="Numéro de maison">
-        </div>
-        <div>
-            <label for="ville">Ville/commune :</label>
-            <input type="text" id="ville" name="ville" placeholder="Ville/commune">
-        </div>
-        <div>
-            <label for="pays">Pays :</label>
-            <select id="pays"></select>
-        </div>
-        <div>
-            <label for="quantite">Totale de quantité d'énergie produite :</label>
-            <input type="text" id="quantite" name="quantite" placeholder="Montant">
-        </div>
+        <section class="donnees">
+            <div>
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" placeholder="Nom de famille">
+            </div>
+            <div>
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Prénom">
+            </div>
+            <div class="rueNumero">
+                <div>
+                    <label for="rue">Rue :</label>
+                    <input type="text" id="rue" name="rue" placeholder="Rue">
+                </div>
+                <div>
+                    <label for="numero">Numéro :</label>
+                    <input type="text" id="numero" name="numero" placeholder="Numéro de maison">
+                </div>
+            </div>
+            <div>
+                <label for="ville">Ville/commune :</label>
+                <input type="text" id="ville" name="ville" placeholder="Ville/commune">
+            </div>
+            <div>
+                <label for="pays">Pays :</label>
+                <select id="pays"></select>
+            </div>
+            <div>
+                <label for="quantite">Totale de quantité d'énergie produite :</label>
+                <input type="text" id="quantite" name="quantite" placeholder="Montant">
+            </div>
+        </section>
         <p><strong>Votre production est de</strong><span id="montant"></span></p>
         <p><strong>Merci pour votre contribution</strong></p>
     </main>

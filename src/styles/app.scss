@@ -60,6 +60,10 @@ html, body {
     width: 100%;
 }
 
+main {
+    padding: 0 23px;
+}
+
 :root {
     --color-bg: #F2F6F8;
     --color-primary: #FF8E31;
@@ -143,6 +147,28 @@ html, body {
 
 .menu--open .menu__ul{
     transform: translateX(0);
+}
+
+select {
+    background-color: var(--color-secondary);
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    width: 100%;
+}
+
+input {
+    background-color: var(--color-secondary);
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    width: 93%;
+}
+
+.donnees {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 /* VERSION PC/DESKTOP */
