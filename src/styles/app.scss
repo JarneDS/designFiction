@@ -23,11 +23,13 @@ h1 {
 h2 {
     font-family: "Shrikhand", serif;
     font-size: clamp(2.25rem, 1.795vw + 1.846rem, 4rem);
+    color: var(--color-black);
 }
 
 h3 {
     font-family: "Sriracha", cursive;
     font-size: clamp(2rem, 0.513vw + 1.885rem, 2.5rem);
+    color: var(--color-black);
 }
 
 h4{
@@ -35,12 +37,12 @@ h4{
     font-size: clamp(1.75rem, 0.513vw + 1.635rem, 2.25rem);
 }
 
-li, button, .credits{
+.menu__li, button, .credits{
     font-family: "Sriracha", cursive;
     font-size: clamp(1.75rem, 0.513vw + 1.635rem, 2.25rem);
 }
 
-p, label{
+p, label, li{
     font-family: "Sriracha", cursive;
     font-size: clamp(1.125rem, 0.128vw + 1.096rem, 1.25rem);
     color: var(--color-black);
@@ -64,6 +66,12 @@ html, body {
 
 main {
     margin: 0 23px;
+}
+
+span {
+    display: block;
+    margin: 12px 0;
+    margin-bottom: 27px;
 }
 
 :root {
@@ -245,6 +253,24 @@ footer {
     color: var(--color-black);
 }
 
+.contact__possibles {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.contact__appareil {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.contact__svg {
+    width: 60px;
+    height: auto;
+}
+
 /* VERSION PC/DESKTOP */
 @media (min-width: 1250px) and (max-width: 1920px) {
     .menu {
@@ -271,5 +297,21 @@ footer {
         background-color: transparent;
         gap: 80px;
         margin-left: 100px;
+    }
+
+    .footer__contact {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .contact__possibles {
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .contact__appareil {
+        width: 50%;
     }
 }
