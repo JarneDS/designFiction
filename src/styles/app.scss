@@ -17,6 +17,7 @@
 h1 {
     font-family: "Shrikhand", serif;
     font-size: clamp(2.625rem, 3.462vw + 1.846rem, 6rem);
+    color: var(--color-black);
 }
 
 h2 {
@@ -39,12 +40,13 @@ li, button, .credits{
     font-size: clamp(1.75rem, 0.513vw + 1.635rem, 2.25rem);
 }
 
-p, label {
+p, label{
     font-family: "Sriracha", cursive;
     font-size: clamp(1.125rem, 0.128vw + 1.096rem, 1.25rem);
+    color: var(--color-black);
 }
 
-.editor {
+.editor, input {
     font-family: "Sriracha", cursive;
     font-size: clamp(0.875rem, 0.256vw + 0.817rem, 1.125rem);
 }
@@ -61,7 +63,7 @@ html, body {
 }
 
 main {
-    padding: 0 23px;
+    margin: 0 23px;
 }
 
 :root {
@@ -74,7 +76,6 @@ main {
 
 .menu {
     background-color: var(--color-primary);
-    width: 100vw;
     display: flex;
     flex-direction: row;
     margin: 0;
@@ -162,7 +163,6 @@ input {
     border: none;
     border-radius: 5px;
     padding: 12px;
-    width: 93%;
 }
 
 .donnees {
@@ -171,11 +171,84 @@ input {
     gap: 25px;
 }
 
+.donnees__div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rueNumero {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#rue, #numero {
+    width: 84%;
+}
+
+.submit {
+    transition: all .3s;
+    background-color: var(--color-primary);
+}
+
+.submit:hover {
+    background-color: var(--color-thirdly);
+}
+
+.resultatsRemerciement {
+    display: none;
+}
+
+.div--afficher {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+footer {
+    margin: 30px 0 0;
+    padding: 23px;
+    background-color: var(--color-primary);
+}
+
+.contact {
+    font-family: "Sriracha", cursive;
+    font-size: clamp(1.125rem, 0.128vw + 1.096rem, 1.25rem);
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+.contact:hover {
+    color: var(--color-thirdly);
+}
+
+.logoHEAJ {
+    width: 60px;
+    filter: brightness(0);
+    transition: all .3s;
+}
+
+.logoHEAJ:hover {
+    filter: none;
+}
+
+.footer__editLogo {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.editor {
+    margin: 0;
+    color: var(--color-black);
+}
+
 /* VERSION PC/DESKTOP */
 @media (min-width: 1250px) and (max-width: 1920px) {
     .menu {
         background-color: var(--color-primary);
-        width: 100vw;
         display: flex;
         flex-direction: row;
         margin: 0;
@@ -185,5 +258,18 @@ input {
 
     .menu__btn {
         display: none;
+    }
+
+    .menu__ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        transform: translateY(0);
+        position: static;
+        height: 100%;
+        padding: 0;
+        background-color: transparent;
+        gap: 80px;
+        margin-left: 100px;
     }
 }
