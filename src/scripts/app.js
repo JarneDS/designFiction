@@ -111,9 +111,16 @@ sections.forEach(section => {
     observer.observe(section)
 })
 
-document.addEventListener("DOMContentLoaded", () => {
-    const sections = document.querySelectorAll("main section");
-    const observer = new IntersectionObserver(handleIntersect, options);
-    sections.forEach(section => observer.observe(section));
-});
+document.querySelector('.scroll').addEventListener('click', function() {
+    // Trouver le premier élément <section>
+    const firstH2 = document.querySelector('section');
+    
+    if (firstH2) {
+        // Calculer la position de défilement ajustée
+        const offsetTop = firstH2.getBoundingClientRect().top + window.pageYOffset - 150;
+        
+        // Faire défiler jusqu'à l'élément avec un décalage de 150px
+        window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+    }
+  });
 
