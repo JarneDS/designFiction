@@ -113,14 +113,13 @@ sections.forEach(section => {
 
 document.querySelector('.scroll').addEventListener('click', function() {
     // Trouver le premier élément <section>
-    const firstH2 = document.querySelector('section');
+    const firstSection = document.querySelector('section');
     
-    if (firstH2) {
+    if (firstSection) {
         // Calculer la position de défilement ajustée
-        const offsetTop = firstH2.getBoundingClientRect().top + window.pageYOffset - 150;
+        const offsetTop = firstSection.getBoundingClientRect().top + window.pageYOffset - 150;
         
         // Faire défiler jusqu'à l'élément avec un décalage de 150px
         window.scrollTo({ top: offsetTop, behavior: 'smooth' });
     }
-  });
-
+});
