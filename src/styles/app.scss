@@ -359,12 +359,16 @@ footer {
 .backToTop {
     transform: rotate(-90deg);
     background-color: var(--color-thirdly);
-    padding: 0 9px;
     border-radius: 50px;
     border: none;
     font-size: 20px;
     text-decoration: none;
     color: var(--color-black);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .backToTop:hover{
