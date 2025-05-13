@@ -111,6 +111,17 @@ sections.forEach(section => {
     observer.observe(section)
 })
 
+const divAnim = document.querySelector(".bloc__animCharge");
+document.addEventListener("DOMContentLoaded", function() {
+    document.documentElement.classList.add("pageAnimation");
+    /*document.body.style.overflow = "hidden";*/
+
+    document.body.addEventListener("animationend", function() {
+        /*document.body.style.overflow = "auto";*/
+        divAnim.style.display = "none";
+    });
+});
+
 document.querySelector('.scroll').addEventListener('click', function() {
     // Trouver le premier élément <section>
     const firstSection = document.querySelector('section');
@@ -122,15 +133,4 @@ document.querySelector('.scroll').addEventListener('click', function() {
         // Faire défiler jusqu'à l'élément avec un décalage de 150px
         window.scrollTo({ top: offsetTop, behavior: 'smooth' });
     }
-});
-
-const divAnim = document.querySelector(".bloc__animCharge");
-document.addEventListener("DOMContentLoaded", function() {
-    document.documentElement.classList.add("pageAnimation");
-    /*document.body.style.overflow = "hidden";*/
-
-    document.body.addEventListener("animationend", function() {
-        document.body.style.overflow = "auto";
-        divAnim.style.display = "none";
-    });
 });
