@@ -244,7 +244,8 @@ section {
 }
 
 .section1 {
-    display: grid;
+    display: flex;
+    flex-direction: column;
 }
 
 .section1__div {
@@ -256,12 +257,10 @@ section {
 }
 
 .section1__p {
-    position: absolute;
+    position: relative;
     z-index: 5;
-    color: var(--color-bg);
-    margin-left: 23px;
-    justify-self: end;
-    margin-right: 20%;
+    color: var(--color-black);
+    margin: 0 23px;
 }
 
 select {
