@@ -243,6 +243,27 @@ section {
     }
 }
 
+.section1 {
+    display: grid;
+}
+
+.section1__div {
+    width: 100%;
+}
+
+.section1__image {
+    width: 100%;
+}
+
+.section1__p {
+    position: absolute;
+    z-index: 5;
+    color: var(--color-bg);
+    margin-left: 23px;
+    justify-self: end;
+    margin-right: 20%;
+}
+
 select {
     background-color: var(--color-secondary);
     border: none;
@@ -494,7 +515,7 @@ footer {
         max-width: 600px;
     }
 
-    .section__grid1, .section__grid2, .section__grid3, .section__gridBase {
+    .section__grid1, .section__grid2, .section__grid3 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
@@ -561,12 +582,28 @@ footer {
         justify-self: center;
     }
 
-    .section__divBase {
-        width: 80%;
+    .section1__div {
+        width: 100%;
         justify-self: end;
         align-self: center;
-        grid-column: 2 / 3;
     }
+
+    .section1 {
+        display: grid;
+    }
+
+    .section1__image {
+        width: 100%;
+    }
+
+.section1__p {
+    position: absolute;
+    z-index: 5;
+    color: var(--color-bg);
+    margin-left: 23px;
+    justify-self: end;
+    margin-right: 20%;
+}
 
     /*Page test*/
     .rueNumero {

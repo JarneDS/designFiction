@@ -90,7 +90,7 @@ if (window.location.pathname.includes("testEnergie.html")) {
 
 
 /* Code provenant de https://www.youtube.com/watch?v=08hkOS9ssmk&t=933s&ab_channel=%C3%89coleduWeb ajusté à mon site */
-const sections = document.querySelectorAll("main section");
+const sections = document.querySelectorAll("section");
 
 let options = {
     rootMargin: "-40% 0px",
