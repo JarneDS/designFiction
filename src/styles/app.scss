@@ -491,7 +491,7 @@ ul {
         opacity: 1;
         position: absolute;
         z-index: 20;
-        bottom: 6%;
+        bottom: 18%;
         left: 50%;
         transform: translateX(-50%);
         display: flex;
@@ -626,6 +626,9 @@ ul {
     margin: 23px 0 0 23px;
     justify-self: end;
     margin-right: 20%;
+    background-color: rgb(255 255 255 / 35%);
+    padding: 0 23px;
+    border-radius: 5px;
 }
 
     /*Page test*/

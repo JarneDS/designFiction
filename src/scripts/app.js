@@ -114,10 +114,10 @@ sections.forEach(section => {
 const divAnim = document.querySelector(".bloc__animCharge");
 document.addEventListener("DOMContentLoaded", function() {
     document.documentElement.classList.add("pageAnimation");
-    /*document.body.style.overflow = "hidden";*/
+    document.body.style.overflow = "hidden";
 
     document.body.addEventListener("animationend", function() {
-        /*document.body.style.overflow = "auto";*/
+        document.body.style.overflow = "auto";
         divAnim.style.display = "none";
     });
 });
