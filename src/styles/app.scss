@@ -66,6 +66,15 @@ html, body {
     width: 100%;
 }
 
+:root {
+    --color-bg: #F2F6F8;
+    --color-primary: #FF8E31;
+    --color-secondary: #A1BCD0;
+    --color-black: #000;
+    --color-thirdly: #30E1FF;
+    --color-fourthly: #353535;
+}
+
 @keyframes pageAnimation{
     0%{
         background-color: var(--color-fourthly);
@@ -117,15 +126,6 @@ span {
     display: block;
     margin: 12px 0;
     margin-bottom: 27px;
-}
-
-:root {
-    --color-bg: #F2F6F8;
-    --color-primary: #FF8E31;
-    --color-secondary: #A1BCD0;
-    --color-black: #000;
-    --color-thirdly: #30E1FF;
-    --color-fourthly: #353535;
 }
 
 .menu {
