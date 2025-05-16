@@ -41,7 +41,7 @@ if (window.location.pathname.includes("testEnergie.html")) {
             }
         }
         // fin code copilot
-    }
+    };
 
     const envoyer = document.querySelector(".submit");
     envoyer.addEventListener("click", displayResult);
@@ -61,32 +61,32 @@ if (window.location.pathname.includes("testEnergie.html")) {
         var montantValue = parseInt(montantInput.value, 10);
 
         if (montantValue >= 0 && montantValue <= 200) {
-            montant.innerHTML += " trop peu";
+            montant.innerHTML += " trop faible";
         }
 
         else if (montantValue >= 201 && montantValue <= 400) {
-            montant.innerHTML += " peu";
+            montant.innerHTML += " faible.";
         }
         else if (montantValue >= 401 && montantValue <= 600) {
-            montant.innerHTML += " moyenne";
+            montant.innerHTML += " moyenne.";
         }
         else if (montantValue >= 601 && montantValue <= 800) {
-            montant.innerHTML += " bonne";
+            montant.innerHTML += " bonne.";
         }
 
         else if (montantValue >= 801 && montantValue <= 1000) {
-            montant.innerHTML += " très bonne";
+            montant.innerHTML += " très bonne.";
         }
 
         else if (montantValue >= 1001) {
-            montant.innerHTML += " superbe";
+            montant.innerHTML += " incroyable !";
         }
 
         else {
             montant.innerHTML += "";
         }
     }
-}
+};
 
 
 /* Code provenant de https://www.youtube.com/watch?v=08hkOS9ssmk&t=933s&ab_channel=%C3%89coleduWeb ajusté à mon site */
@@ -95,7 +95,7 @@ const sections = document.querySelectorAll("section");
 let options = {
     rootMargin: "-40% 0px",
     threshold: 0
-}
+};
 
 function handleIntersect(entries) {
     entries.forEach(entry => {
@@ -103,23 +103,12 @@ function handleIntersect(entries) {
             entry.target.style.opacity = 1;
         }
     })
-}
+};
 
 const observer = new IntersectionObserver(handleIntersect, options);
 
 sections.forEach(section => {
     observer.observe(section)
-})
-
-const divAnim = document.querySelector(".bloc__animCharge");
-document.addEventListener("DOMContentLoaded", function() {
-    document.documentElement.classList.add("pageAnimation");
-    document.body.style.overflow = "hidden";
-
-    document.body.addEventListener("animationend", function() {
-        document.body.style.overflow = "auto";
-        divAnim.style.display = "none";
-    });
 });
 
 document.querySelector('.scroll').addEventListener('click', function() {
