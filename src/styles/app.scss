@@ -114,8 +114,9 @@ span {
     top: 0;
     left: 0;
     width: 100%;
+    max-width: 700px;
     height: 100%;
-    transform: translateX(100%);
+    transform: translateX(1000%);
     transition: transform .3s ease-out;
     align-items: start;
     z-index: 10;
@@ -292,6 +293,10 @@ footer {
     text-decoration: none;
     color: var(--color-black);
     transition: all .3s;
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    gap: 10px;
 }
 
 .contact:hover {
