@@ -49,13 +49,15 @@
         <h1>Bienvenue dans la base de données de l’énergie produite par foyer</h1>
         <p>Veuillez entrer vos coordonnées ainsi que le montant d’énergie produite par votre&nbsp;foyer&nbsp;:</p>
         <section class="donnees">
-            <div class="donnees__div">
-                <label for="nom">Nom :</label>
-                <input type="text" id="nom" name="nom" placeholder="Nom de famille">
-            </div>
-            <div class="donnees__div">
-                <label for="prenom">Prénom :</label>
-                <input type="text" id="prenom" name="prenom" placeholder="Prénom">
+            <div class="nomPrenom">
+                <div class="donnees__div">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" placeholder="Nom de famille">
+                </div>
+                <div class="donnees__div">
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Prénom">
+                </div>
             </div>
             <div class="rueNumero">
                 <div class="donnees__div">
@@ -67,16 +69,22 @@
                     <input type="text" id="numero" name="numero" placeholder="Numéro de maison">
                 </div>
             </div>
-            <div class="donnees__div">
-                <label for="ville">Ville/commune :</label>
-                <input type="text" id="ville" name="ville" placeholder="Ville/commune">
+            <div class="villeCode">
+                <div class="donnees__div">
+                    <label for="ville">Ville/commune :</label>
+                    <input type="text" id="ville" name="ville" placeholder="Ville/commune">
+                </div>
+                <div class="donnees__div">
+                    <label for="codePostal">Code postal :</label>
+                    <input type="text" id="codePostal" name="codePostal" placeholder="Code postal">
+                </div>
             </div>
             <div class="donnees__div">
                 <label for="pays">Pays :</label>
                 <select id="pays"></select>
             </div>
             <div class="donnees__div">
-                <label for="quantite">Totale de quantité d'énergie produite&nbsp;:*</label>
+                <label for="quantite">Totale de quantité d'énergie produite en&nbsp;watts&nbsp;(W)&nbsp;:*</label>
                 <input type="text" id="quantite" name="quantite" placeholder="Montant" required>
             </div>
             <input class="submit" type="submit" value="Envoyer le formulaire">
