@@ -230,8 +230,12 @@ select {
     background-color: var(--color-secondary);
     border: none;
     border-radius: 5px;
-    padding: 12px;
+    padding: 19px 12px;
     width: 100%;
+}
+
+.entrerFoyer {
+    min-width: fit-content;
 }
 
 input {
@@ -254,14 +258,14 @@ input {
     gap: 10px;
 }
 
-.rueNumero, .villeCode, .nomPrenom {
+.rueNumero, .villeCode, .nomPrenom, .paysQuantite {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 20px;
 }
 
 #rue, #numero {
-    width: 84%;
+    width: 92%;
 }
 
 .submit {
@@ -657,4 +661,8 @@ ul {
         margin-bottom: 30px;
     }
     
+    .rueNumero, .villeCode, .nomPrenom, .paysQuantite {
+        flex-direction: row;
+    }
+
 }

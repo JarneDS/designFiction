@@ -47,7 +47,7 @@
 
     <main>
         <h1>Bienvenue dans la base de données de l’énergie produite par foyer</h1>
-        <p>Veuillez entrer vos coordonnées ainsi que le montant d’énergie produite par votre&nbsp;foyer&nbsp;:</p>
+        <p class="entrerFoyer">Veuillez entrer vos coordonnées ainsi que le montant d’énergie produite par votre&nbsp;foyer&nbsp;:</p>
         <section class="donnees">
             <div class="nomPrenom">
                 <div class="donnees__div">
@@ -79,13 +79,15 @@
                     <input type="text" id="codePostal" name="codePostal" placeholder="Code postal">
                 </div>
             </div>
-            <div class="donnees__div">
-                <label for="pays">Pays :</label>
-                <select id="pays"></select>
-            </div>
-            <div class="donnees__div">
-                <label for="quantite">Totale de quantité d'énergie produite en&nbsp;watts&nbsp;(W)&nbsp;:*</label>
-                <input type="text" id="quantite" name="quantite" placeholder="Montant" required>
+            <div class="paysQuantite">
+                <div class="donnees__div">
+                    <label for="pays">Pays :</label>
+                    <select id="pays"></select>
+                </div>
+                <div class="donnees__div">
+                    <label for="quantite">Totale de quantité d'énergie produite en&nbsp;watts&nbsp;(W)&nbsp;:*</label>
+                    <input type="text" id="quantite" name="quantite" placeholder="Montant" required>
+                </div>
             </div>
             <input class="submit" type="submit" value="Envoyer le formulaire">
         </section>
